@@ -23,6 +23,9 @@ const navigate=useNavigate();
          <li className="nav-item">
           <a className="nav-link" href="#" onClick={()=>navigate("/service")}>Service</a>
         </li>
+         <li className="nav-item">
+          <a className="nav-link" href="#" onClick={()=>navigate("/todo-list")}>Todo List</a>
+        </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Link

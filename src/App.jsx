@@ -6,6 +6,7 @@ import Navbar from "./pages/Navbar"
 import { BrowserRouter,Routes,Route } from "react-router-dom"
 import Service from "./pages/Service";
 import "./App.css"
+import TodoList from "./pages/TodoList";
 function App(){
   return (
     <>
@@ -16,6 +17,7 @@ function App(){
   <Route path="/home" element={<Home />}></Route>
   <Route path="/about" element={<About /> }></Route>
   <Route path="/service" element={<Service /> }></Route>
+  <Route path="/todo-list" element={<TodoList /> }></Route>
 </Routes>
 </BrowserRouter>
 
