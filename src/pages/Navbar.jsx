@@ -24,15 +24,15 @@ const navigate=useNavigate();
           <a className="nav-link" href="#" onClick={()=>navigate("/service")}>Service</a>
         </li>
          <li className="nav-item">
-          <a className="nav-link" href="#" onClick={()=>navigate("/use-state")}>USe State</a>
+          <a className="nav-link" href="#" onClick={()=>navigate("/todo-list")}>Todo List</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Link
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><a className="dropdown-item" onClick={()=>navigate("/action")}>Action</a></li>
+            <li><a className="dropdown-item"  onClick={()=>navigate("/action-another")}>Another action</a></li>
             <li><hr className="dropdown-divider" /></li>
             <li><a className="dropdown-item" href="#">Something else here</a></li>
           </ul>

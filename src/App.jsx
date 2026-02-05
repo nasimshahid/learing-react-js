@@ -6,8 +6,17 @@ import Navbar from "./pages/Navbar"
 import { BrowserRouter,Routes,Route } from "react-router-dom"
 import Service from "./pages/Service";
 import "./App.css"
-import UseState from "./pages/UseState";
+import TodoList from "./pages/TodoList";
+import Action from "./pages/Action";
+import AnotherAction from "./pages/AnotherAction";
+import { createContext } from "react";
+export const UserContext = createContext();
 function App(){
+
+  // Props
+let name = "John Doe";
+let user ={name:"Shahid", age:30,}
+ 
   return (
     <>
 <BrowserRouter>
@@ -17,7 +26,13 @@ function App(){
   <Route path="/home" element={<Home />}></Route>
   <Route path="/about" element={<About /> }></Route>
   <Route path="/service" element={<Service /> }></Route>
-  <Route path="/use-state" element={<UseState /> }></Route>
+  <Route path="/todo-list" element={<TodoList /> }></Route>
+  <Route path="/action" element={<Action  data={name} /> }></Route>
+  <Route path="/action-another" element={
+    <UserContext.Provider value={user}>
+    <AnotherAction  data={name}  /> 
+    </UserContext.Provider>
+    }></Route>
 </Routes>
 </BrowserRouter>
 
