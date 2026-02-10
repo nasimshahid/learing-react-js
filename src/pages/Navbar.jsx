@@ -38,7 +38,10 @@ const navigate=useNavigate();
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+          <a className="nav-link " href="#" onClick={()=>navigate("/blog")}>Blog</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link " href="#" onClick={()=>navigate("/gallery")}>Gallery</a>
         </li>
       </ul>
       <form className="d-flex">
