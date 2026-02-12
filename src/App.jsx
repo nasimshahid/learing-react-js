@@ -12,6 +12,7 @@ import AnotherAction from "./pages/AnotherAction";
 import { createContext } from "react";
 import Gallery from "./pages/Gallery";
 import Blog from "./pages/Blog";
+import Memo from "./pages/Memo";
 export const UserContext = createContext();
 function App(){
 
@@ -24,10 +25,10 @@ let user ={name:"Shahid", age:30,}
 <BrowserRouter>
 <Navbar />
 <Routes>
-   <Route path="/" element={<h1>home Pages</h1>}></Route>
-  <Route path="/home" element={<Home />}></Route>
+  <Route path="/" element={<Home />}></Route>
   <Route path="/about" element={<About /> }></Route>
   <Route path="/gallery" element={<Gallery /> }></Route>
+  <Route path="/memo" element={<Memo /> }></Route>
   <Route path="/blog" element={<Blog /> }></Route>
   <Route path="/service" element={<Service /> }></Route>
   <Route path="/todo-list" element={<TodoList /> }></Route>

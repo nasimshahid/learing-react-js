@@ -1,7 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 function Navbar() {
-const navigateHome =()=> navigate("/home");
+const navigateHome =()=> navigate("/");
 
 
 const navigate=useNavigate();
@@ -42,6 +42,9 @@ const navigate=useNavigate();
         </li>
         <li className="nav-item">
           <a className="nav-link " href="#" onClick={()=>navigate("/gallery")}>Gallery</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link " href="#" onClick={()=>navigate("/memo")}>Memo</a>
         </li>
       </ul>
       <form className="d-flex">
